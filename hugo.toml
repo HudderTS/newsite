@@ -1,60 +1,17 @@
 baseURL                 = 'https://hudder.ir/'
 canonifyurls            = "true"
-languageCode            = 'fa-ir'
-title                   = 'راهکارهای فناوری هادر'
+languageCode            = 'en-us'
+title                   = 'Hudder | هادر'
 publishDir              = "docs"
 
-[permalinks]
-    about-us             = "/:section/:contentbasename/"  #why :contentbasename, why not :title? not to break the return link in shop page; Better to use another idea by coding a bit in future.
-    blog                = "/:section/:year/:month/:title/"
-    apply                 = "/:section/:contentbasename/"
-    something_else                = "/:title/"
+# [permalinks]
+#     about-us             = "/:section/:contentbasename/"  #why :contentbasename, why not :title? not to break the return link in shop page; Better to use another idea by coding a bit in future.
+#     blog                = "/:section/:year/:month/:title/"
+#     apply                 = "/:section/:contentbasename/"
+#     something_else                = "/:title/"
 
 [[cascade]]
    [cascade._target]
-    path = '/camps/product-design-1'
+    path = '/camps/sample-page'
     [cascade.params]
-      layout = "product-design-1"
-[[cascade]]
-   [cascade._target]
-    path = '/camps/product-design-2'
-    [cascade.params]
-      layout = "product-design-2"
-[[cascade]]
-   [cascade._target]
-    path = '/camps/product-design-3'
-    [cascade.params]
-      layout = "product-design-3"
-[[cascade]]
-   [cascade._target]
-    path = '/camps/cloud-infra-1'
-    [cascade.params]
-      layout = "cloud-infra-1"
-[[cascade]]
-   [cascade._target]
-    path = '/camps/cloud-infra-2'
-    [cascade.params]
-      layout = "cloud-infra-2"
-
-[[cascade]]
-   [cascade._target]
-    path = '/path/cloud-engineering'
-    [cascade.params]
-      layout = "cloud-engineering"
-[[cascade]]
-   [cascade._target]
-    path = '/path/product-design'
-    [cascade.params]
-      layout = "product-design"
-
-[[cascade]]
-   [cascade._target]
-    path = '/courses/cloud-infra-1'
-    [cascade.params]
-      layout = "cloud-infra-1"
-
-[[cascade]]
-   [cascade._target]
-    path = '/courses/how-we-deisgn-a-product'
-    [cascade.params]
-      layout = "how-we-deisgn-a-product"
+      layout = "sample-page"
